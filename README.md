@@ -64,4 +64,23 @@
         echo $sum;
 
 ```
+---
+
+# MACS
+
+1. Get XAMPP
+2.apt update
+3.apt install vim
+4.vim /opt/lampp/etc/extra/httpd-xampp.conf
+5.change Require local to Require all granted
+```
+<Directory "/opt/lampp/phpmyadmin">
+  AllowOverride AuthConfig
+  Require all granted
+  ...
+```
+6. :wq
+7.restart apache in service tab
+8.open phpmyadmin
+
 
